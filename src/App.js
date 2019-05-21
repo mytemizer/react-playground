@@ -2,7 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ReactDOM from 'react-dom';
-
+import Button from 'react-bootstrap/Button';
+import arlogo from "./arcelik.jpeg"
+import homelogo from "./logo-homewhiz.svg"
 class App extends React.Component{
 
   render(){
@@ -105,16 +107,16 @@ function FormattedDate(props) {
 
 function LoginButton(props) {
   return (
-      <button onClick={props.onClick}>
+      <Button onClick={props.onClick}>
         Login
-      </button>
+      </Button>
   );
 }
 function LogoutButton(props) {
   return (
-      <button onClick={props.onClick}>
+      <Button onClick={props.onClick}>
         Logout
-      </button>
+      </Button>
   );
 }
 
@@ -542,9 +544,161 @@ const listItems = numbers.map((number) =>
     <li key={number.toString()}>{number}</li>
 );
 
+
+function BootstrapDeneme() {
+
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                    1 of 2
+                </div>
+                <div className="col">
+                    2 of 2
+                </div>
+            </div>
+            <div className="w-100"></div>
+            <div className="row">
+                <div className="col">
+                    1 of 3
+                </div>
+                <div className="col">
+                    2 of 3
+                </div>
+                <div className="col">
+                    3 of 3
+                </div>
+            </div>
+            <hr/>
+            <div className="container">
+                <div className="row">
+                    <div className="col">Column</div>
+                    <div className="col">Column</div>
+                    <div className="w-100"></div>
+                    <div className="col">Column</div>
+                    <div className="col">Column</div>
+                </div>
+            </div>
+            <hr/>
+            <div className="container">
+                <div className="row align-items-start">
+                    <div className="col">
+                        One of three columns
+                    </div>
+                    <div className="col">
+                        One of three columns
+                    </div>
+                    <div className="col">
+                        One of three columns
+                    </div>
+                </div>
+                <div className="row align-items-center">
+                    <div className="col">
+                        One of three columns
+                    </div>
+                    <div className="col">
+                        One of three columns
+                    </div>
+                    <div className="col">
+                        One of three columns
+                    </div>
+                </div>
+                <div className="row align-items-end">
+                    <div className="col">
+                        One of three columns
+                    </div>
+                    <div className="col">
+                        One of three columns
+                    </div>
+                    <div className="col">
+                        One of three columns
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div className="container">
+                <div className="row">
+                    <div className="col align-self-start">
+                        One of three columns
+                    </div>
+                    <div className="col align-self-center">
+                        One of three columns
+                    </div>
+                    <div className="col align-self-end">
+                        One of three columns
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div className="container">
+                <div className="row justify-content-start">
+                    <div className="col-4">
+                        One of two columns
+                    </div>
+                    <div className="col-4">
+                        One of two columns
+                    </div>
+                </div>
+                <div className="row justify-content-center">
+                    <div className="col-4">
+                        One of two columns
+                    </div>
+                    <div className="col-4">
+                        One of two columns
+                    </div>
+                </div>
+                <div className="row justify-content-end">
+                    <div className="col-4">
+                        One of two columns
+                    </div>
+                    <div className="col-4">
+                        One of two columns
+                    </div>
+                </div>
+                <div className="row justify-content-around">
+                    <div className="col-4">
+                        One of two columns
+                    </div>
+                    <div className="col-4">
+                        One of two columns
+                    </div>
+                </div>
+                <div className="row justify-content-between">
+                    <div className="col-4">
+                        One of two columns
+                    </div>
+                    <div className="col-4">
+                        One of two columns
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div className="row">
+                <div className="col-9">.col-9</div>
+                <div className="col-4">.col-4 Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+                <div className="col-6">.col-6
+                    Subsequent columns continue along the new line.</div>
+            </div>
+            <hr/>
+            <div className="media">
+                <img className="ml-3" src={arlogo} alt="LOGO" />
+                <img className="ml-3" src={homelogo} alt="LOGO" />
+            </div>
+        </div>
+
+        )
+
+
+}
+
 function App2() {
   return (
       <div>
+
+        <hr />
+        <p> Bootstrap </p>
+        <hr />
+        <BootstrapDeneme/>
         <hr />
         <p> Left-right-children (Composition vs Inher Concept) </p>
         <hr />
