@@ -1,3 +1,5 @@
+This repository is created during learning React.js.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
